@@ -10,7 +10,7 @@ const quest1 = function(){
     const ans2 = "booleans"
     const ans3 = "alerts"
     const ans4 = "numbers"
-    first.addEventListener('click', )
+    // first.addEventListener('click', )
     
 }
 
@@ -54,4 +54,5 @@ const quest5 = function(){
     return null;
 }
 
-console.log('Hello World');
+
+first.addEventListener('click', console.log('Hello World'))
