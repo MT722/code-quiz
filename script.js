@@ -1,3 +1,8 @@
+let score = 0/5;
+const first = document.getElemebtById("ans1")
+const first = document.getElemebtById("ans1")
+const first = document.getElemebtById("ans1")
+const first = document.getElemebtById("ans1")
 const quest1 = function(){
     const question = "Commonly used datatypes do not include";
     const ans1 = "strings"
@@ -8,7 +13,7 @@ const quest1 = function(){
     return null;
 }
 
-const quest1 = function(){
+const quest2 = function(){
     const question = "Commonly used datatypes do not include";
     const ans1 = "strings"
     const ans2 = "booleans"
@@ -18,7 +23,7 @@ const quest1 = function(){
     return null;
 }
 
-const quest1 = function(){
+const quest3 = function(){
     const question = "Commonly used datatypes do not include";
     const ans1 = "strings"
     const ans2 = "booleans"
@@ -28,7 +33,7 @@ const quest1 = function(){
     return null;
 }
 
-const quest1 = function(){
+const quest4 = function(){
     const question = "Commonly used datatypes do not include";
     const ans1 = "strings"
     const ans2 = "booleans"
@@ -38,7 +43,7 @@ const quest1 = function(){
     return null;
 }
 
-const quest1 = function(){
+const quest5 = function(){
     const question = "Commonly used datatypes do not include";
     const ans1 = "strings"
     const ans2 = "booleans"
@@ -48,5 +53,5 @@ const quest1 = function(){
     return null;
 }
 
-
-addEventListener('click', onclick, #)
+const first = document.getElemebtById("ans1")
+first.addEventListener('click',  )
