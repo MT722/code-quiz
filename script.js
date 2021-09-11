@@ -10,6 +10,7 @@ const quest1 = function(){
     const ans2 = "booleans"
     const ans3 = "alerts"
     const ans4 = "numbers"
+second.addEventListener('click', 'setAttribute')
     // first.addEventListener('click', )
     
 }
