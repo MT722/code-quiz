@@ -3,12 +3,16 @@ body{
 
 }
 
-.card{
-    position:absolute;
-}
-
 main{
     text-align:center;
     padding-top: 50px;
     display:block;
+}
+
+.card{
+    position:absolute;
+}
+
+ul{
+    list-style-type:none;
 }
