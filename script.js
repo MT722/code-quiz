@@ -1,59 +1,51 @@
 let score = 0/5;
-const first = document.getElemebtById("ans1")
-const second = document.getElemebtById("ans2")
-const third = document.getElemebtById("ans3")
-const fourth = document.getElemebtById("ans4")
+var first = document.getElementById("ans1")
+var second = document.getElementById("ans2")
+var third = document.getElementById("ans3")
+var fourth = document.getElementById("ans4")
 let questNum = 0;
-const quest1 = function(){
-    const question = "Commonly used datatypes do not include";
-    const ans1 = "strings"
-    const ans2 = "booleans"
-    const ans3 = "alerts"
-    const ans4 = "numbers"
-second.addEventListener('click', 'setAttribute')
-    // first.addEventListener('click', )
-    
-}
+var highScore = document.getElementById("view")
+var startQuiz = document.getElementById("start")
+var questions = [
+    {
+        question = "Commonly used datatypes do not include",
+         ans1 = "strings",
+         ans2 = "booleans",
+         ans3 = "alerts",
+         ans4 = "numbers",
+    },
+    {
+        question = "Commonly used datatypes do not include",
+         ans1 = "strings",
+         ans2 = "booleans",
+         ans3 = "alerts",
+         ans4 = "numbers",
+    },
+    {
+        question = "Commonly used datatypes do not include",
+         ans1 = "strings",
+         ans2 = "booleans",
+         ans3 = "alerts",
+         ans4 = "numbers",
+    },
+    {
+        question = "Commonly used datatypes do not include",
+         ans1 = "strings",
+         ans2 = "booleans",
+         ans3 = "alerts",
+         ans4 = "numbers",
+    },
+    {
+        question = "Commonly used datatypes do not include",
+         ans1 = "strings",
+         ans2 = "booleans",
+         ans3 = "alerts",
+         ans4 = "numbers",
+    },
+]
+function start(){
 
-const quest2 = function(){
-    const question = "Commonly used datatypes do not include";
-    const ans1 = "strings"
-    const ans2 = "booleans"
-    const ans3 = "alerts"
-    const ans4 = "numbers"
-
-    return null;
-}
-
-const quest3 = function(){
-    const question = "Commonly used datatypes do not include";
-    const ans1 = "strings"
-    const ans2 = "booleans"
-    const ans3 = "alerts"
-    const ans4 = "numbers"
-
-    return null;
-}
-
-const quest4 = function(){
-    const question = "Commonly used datatypes do not include";
-    const ans1 = "strings"
-    const ans2 = "booleans"
-    const ans3 = "alerts"
-    const ans4 = "numbers"
-
-    return null;
-}
-
-const quest5 = function(){
-    const question = "Commonly used datatypes do not include";
-    const ans1 = "strings"
-    const ans2 = "booleans"
-    const ans3 = "alerts"
-    const ans4 = "numbers"
-
-    return null;
 }
 
 
-first.addEventListener('click', console.log('Hello World'))
+start.addEventListener('click', start());
