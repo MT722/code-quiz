@@ -5,7 +5,7 @@ var third = document.getElementById("ans3")
 var fourth = document.getElementById("ans4")
 let questNum = 0;
 var highScore = document.getElementById("view")
-var startQuiz = document.getElementById("start")
+var start = document.getElementById("start")
 var questions = [
     {
         question : "Commonly used datatypes do not include",
@@ -23,7 +23,7 @@ var questions = [
     },
     {
         question : "What are the main laguages of web development?",
-         ans1 : "HTML, CSS, JavaScript",
+         ans1 : "HTML, CSS, JavaScript",//answer
          ans2 : "Java",
          ans3 : "C++",
          ans4 : "Python",
@@ -31,29 +31,24 @@ var questions = [
     {
         question : "What does 'full stack' mean?",
          ans1 : "A stack of pancakes",
-         ans2 : "Relating to front and back end applications",
+         ans2 : "Relating to front and back end applications",//answer
          ans3 : "A stack of books",
          ans4 : "A stack of cups",
-    },
-    {
-        question : "",
-         ans1 : "strings",
-         ans2 : "booleans",
-         ans3 : "alerts",
-         ans4 : "numbers",
-    },
+    }
+    
 ]
 //start the quiz
-function start(){
 
+function startQuiz(){
+    first.textContent = (questions[3].ans1);
     console.log('hello world');
     return 'hello world';
 }
-function ques1(){
+start.addEventListener('click', startQuiz());
+// function ques1(){
     
-}
+// }
 
 
- startQuiz.addEventListener('click', start());
 
-console.log(start());
+ 
