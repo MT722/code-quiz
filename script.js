@@ -39,15 +39,20 @@ var questions = [
 ]
 //start the quiz
 
-function startQuiz(){
+function starter(){
     first.textContent = (questions[3].ans1);
     console.log('hello world');
-    return 'hello world';
+   
 }
-start.addEventListener('click', startQuiz());
-// function ques1(){
-    
-// }
+start.addEventListener("click", function(){
+    starter();
+});
+function ques1(){
+    first.textContent = (questions[0].ans1);
+    second.textContent = (questions[1].ans2);
+    third.textContent = (questions[2].ans3);
+    fourth.textContent = (questions[3].ans4);
+}
 
 
 
