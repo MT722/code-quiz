@@ -53,10 +53,12 @@ function ques1(){
     first.textContent = (questions[0].ans1);
     first.addEventListener("click", function(){
         ques2();
+        console.log(score);
     });
     second.textContent = (questions[0].ans2);
     second.addEventListener("click", function(){
         ques2();
+        console.log(score);
     });
     third.textContent = (questions[0].ans3);
     third.addEventListener("click", function(){
@@ -67,6 +69,7 @@ function ques1(){
     fourth.textContent = (questions[0].ans4);
     fourth.addEventListener("click", function(){
         ques2();
+        console.log(score);
     });
     
     
@@ -128,6 +131,7 @@ function ques4(){
     first.textContent = (questions[3].ans1);
     first.addEventListener("click", function(){
         console.log(score);
+        card.style.display = 'none';
     });
     second.textContent = (questions[3].ans2);
     second.addEventListener("click", function(){
@@ -138,10 +142,12 @@ function ques4(){
     third.textContent = (questions[3].ans3);
     third.addEventListener("click", function(){
         console.log(score);
+        card.style.display = 'none';
     });
     fourth.textContent = (questions[3].ans4);
     fourth.addEventListener("click", function(){
         console.log(score);
+        card.style.display = 'none';
     });
     
     
