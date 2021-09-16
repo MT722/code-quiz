@@ -138,6 +138,9 @@ function ques4(){
         score += 2;
         console.log(score);
         card.style.display = 'none';
+        scores.style.display = 'block';
+        input.style.display = 'block';
+        console.log('quiz over');
     });
     third.textContent = (questions[3].ans3);
     third.addEventListener("click", function(){
@@ -147,6 +150,7 @@ function ques4(){
     fourth.textContent = (questions[3].ans4);
     fourth.addEventListener("click", function(){
         console.log(score);
+        console.log('quiz over');
         card.style.display = 'none';
     });
     
@@ -157,6 +161,7 @@ function starter(){
     console.log('hello world');
     ques1();
     score = 0;
+    
 }
 start.addEventListener("click", function(){
     starter();
@@ -165,8 +170,9 @@ start.addEventListener("click", function(){
 
 
 again.addEventListener("click", function(){
-    
-    
+    card.style.display = 'block';
+    starter();
+    // input.style.display = 
 });
 
  
