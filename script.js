@@ -9,7 +9,8 @@ var start = document.getElementById("start")
 var question = document.querySelector(".question")
 var scores = document.querySelector(".scores")
 var input = document.querySelector(".input")
-var timer = 0;
+var seconds = 10;
+var time = document.getElementById("Timer");
 var again = document.getElementById('tryAgain');
 var card = document.querySelector('.card');
 var questions = [
@@ -49,7 +50,7 @@ input.style.display = 'none';
 //qustion functions
 
 function ques1(){
-    
+    question.textContent = (questions[0].question);
     first.textContent = (questions[0].ans1);
     first.addEventListener("click", function(){
         ques2();
@@ -76,6 +77,7 @@ function ques1(){
 }
 
 function ques2(){
+    question.textContent = (questions[1].question);
     first.textContent = (questions[1].ans1);
     first.addEventListener("click", function(){
         ques3();
@@ -102,6 +104,7 @@ function ques2(){
 }
 
 function ques3(){
+    question.textContent = (questions[2].question);
     first.textContent = (questions[2].ans1);
     first.addEventListener("click", function(){
         score += 2;
@@ -128,6 +131,7 @@ function ques3(){
 }
 
 function ques4(){
+    question.textContent = (questions[3].question);
     first.textContent = (questions[3].ans1);
     first.addEventListener("click", function(){
         console.log(score);
@@ -137,6 +141,7 @@ function ques4(){
     second.addEventListener("click", function(){
         score += 2;
         console.log(score);
+        console.log('quiz over');
         card.style.display = 'none';
         scores.style.display = 'block';
         input.style.display = 'block';
@@ -150,7 +155,8 @@ function ques4(){
     fourth.textContent = (questions[3].ans4);
     fourth.addEventListener("click", function(){
         console.log(score);
-        console.log('quiz over');
+        
+        
         card.style.display = 'none';
     });
     
@@ -161,7 +167,7 @@ function starter(){
     console.log('hello world');
     ques1();
     score = 0;
-    
+    seconds = 60;
 }
 start.addEventListener("click", function(){
     starter();
@@ -172,7 +178,15 @@ start.addEventListener("click", function(){
 again.addEventListener("click", function(){
     card.style.display = 'block';
     starter();
-    // input.style.display = 
+    scores.style.display = 'none';
+    input.style.display = 'none';
+   
 });
 
- 
+ var timer = setInterval(function(){
+    seconds--;
+    time.textContent = "Time:" + seconds;
+    if(seconds==0||seconds<0){
+        clearInterval(timer);
+    }
+ },1000)
